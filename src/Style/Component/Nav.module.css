@@ -1,0 +1,17 @@
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.link {
+    display: flex;
+    justify-content: flex-end;
+    margin: 8vh;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
