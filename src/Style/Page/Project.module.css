@@ -1,0 +1,53 @@
+.containerTitleAP{
+    display: flex;
+    font-size: x-large;
+    flex-direction: row;
+    margin-left: 5vh;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.h1TitleAp{
+    width: 25%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.trait{
+    border-bottom: 3px solid black;
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+}
+
+.containerAP{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    height: 100%;
+    margin-top: 20vh;
+}
+
+.AP{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 1vh;
+    margin: 2vh;
+    padding: 3vh;
+    box-shadow: 8px 4px 4px black;
+}
+
+.content{
+    padding-bottom: 1vh;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+}
+
+button{
+    border-radius: 2px;
+}
+
+

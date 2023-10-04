@@ -1,0 +1,21 @@
+.containerTitleVT{
+    display: flex;
+    font-size: x-large;
+    flex-direction: row;
+    margin-left: 5vh;
+    width: 95%;
+    justify-content: flex-end;
+}
+
+.h1TitleVT{
+    width: 35%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.trait{
+    border-bottom: 3px solid black;
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+}

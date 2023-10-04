@@ -11,7 +11,7 @@ function HomePage() {
          <Nav />
             <div className={styles.container}>
                 <div className={styles.containerName}>
-                    <h1>MARINE RICHER</h1>
+                    <h1 className={styles.h1Name}>MARINE RICHER</h1>
                 </div>
                 <div className={styles.containerContent}>
                     <h1>BTS SIO option SLAM</h1>

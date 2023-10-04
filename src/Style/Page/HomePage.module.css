@@ -9,11 +9,25 @@
     display: flex;
    font-size: xxx-large;
     height: 10%;
-    margin-left: 5vh;
+    width: 70%;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 5vh;
+}
+
+.h1Name{
+    margin-bottom: 0;
+    margin-top: 15vh;
 }
 
 .containerContent{
     display: flex;
+    justify-content: flex-end;
+    padding-right: 10vh;
+    width: 90%;
+    margin-top: 0;
+    padding-top: 0;
     font-size: xx-large;
     height: 90%;
+
 }
