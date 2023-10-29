@@ -1,4 +1,44 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+
+
+.containerIconsPresent{
+    display: flex;
+    flex-direction: row;
+
+}
+.icons{
+width: 90%;
+}
+
+.containerIcon{
+display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.icon{
+    width: 13%;
+    height: 23%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh;
+
+}
+.containerline{
+    display: flex;
+    height: 14%;
+    width: 14%;
+justify-content: center;
+}
+.line{
+    border-left: 3px solid black;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    justify-self: flex-end;
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -9,10 +49,10 @@
     display: flex;
    font-size: xxx-large;
     height: 10%;
-    width: 70%;
-    align-items: flex-end;
+    width: 100%;
+    align-items: flex-start;
     justify-content: center;
-    padding-right: 5vh;
+
 }
 
 .h1Name{
@@ -22,12 +62,13 @@
 
 .containerContent{
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     padding-right: 10vh;
-    width: 90%;
+    width: 100%;
     margin-top: 0;
     padding-top: 0;
-    font-size: xx-large;
+    font-size: x-large;
     height: 90%;
+    font-family: 'Inconsolata', monospace;
 
 }
