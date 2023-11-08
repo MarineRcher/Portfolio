@@ -6,8 +6,9 @@
 }
 
 body {
-    background: rgb(255,226,238);
-    background: linear-gradient(128deg, rgba(255,226,238,1) 0%, rgba(255,213,151,1) 100%);
+        background-image: url("./../assets/fond-texture-beton-uni-blanc.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
     margin: 0;
     padding: 0;
     font-family: 'Noto Serif Display', serif;

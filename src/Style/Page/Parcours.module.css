@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+
 .container{
 
 }
@@ -24,27 +26,10 @@
 
 .line {
     position: relative;
-    width: 5mm;
+    width: 2px;
     height: 100px;
     background: black;
 }
-
-.line:before,
-.line:after {
-    content: "";
-    position: absolute;
-    width: 5mm;
-    height: 5mm;
-    border-radius: 50%;
-    background: black;
-}
-
-.line:before {
-    top: -2.5mm;
-}
-
-.line:after {
-    bottom: -2.5mm;
 
 
 .containerAlternance{

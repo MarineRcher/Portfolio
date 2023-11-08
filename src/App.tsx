@@ -1,6 +1,5 @@
 import {Route, Routes} from 'react-router-dom';
-
-//import css
+////import css
 import './Style/App.css';
 
 //import page
@@ -12,6 +11,7 @@ import Parcours from "./Page/Parcours.tsx";
 function App() {
   return (
     <>
+
         <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/projets" element={<Project />} />

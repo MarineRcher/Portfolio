@@ -7,7 +7,7 @@ function Parcours() {
         <div className={styles.container}>
             <div className={styles.title_cv}>
                 <div className={styles.title}>
-                    Parcours
+                  <h1>Parcours</h1>
                 </div>
                 <div className={styles.cv}>
                     CV en pdf
