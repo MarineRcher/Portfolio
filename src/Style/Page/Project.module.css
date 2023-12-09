@@ -1,42 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Karla&display=swap');
+
 .containerTitleAP{
     display: flex;
-    font-size: x-large;
     flex-direction: row;
-    margin-left: 5vh;
     width: 100%;
-    justify-content: flex-end;
 }
 
 .h1TitleAp{
-    width: 25%;
-    padding-bottom: 0;
-    margin-bottom: 0;
+    color: #FE5D2C;
+    font-size: 3rem;
+    margin-left: 6vh;
+}
+.containeTitleAndAp{
+
+}
+
+.containeTitle{
+
 }
 
 .trait{
-    border-bottom: 3px solid black;
-    display: flex;
-    justify-content: flex-end;
-    width: 80%;
+
 }
 
 .containerAP{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: stretch;
     height: 100%;
-    margin-top: 20vh;
+    font-family: 'Karla', sans-serif;
 }
 
 .AP{
     display: flex;
-    flex-direction: column;
-    border: 2px solid black;
+    flex-direction: row;
     border-radius: 1vh;
-    margin: 2vh;
-    padding: 3vh;
-    box-shadow: 8px 4px 4px black;
+
+
 }
 
 .content{
@@ -44,10 +45,14 @@
     margin-top: 0;
     padding-top: 0;
     margin-bottom: 0;
+
 }
 
 button{
     border-radius: 2px;
+}
+.containerContent{
+
 }
 
 

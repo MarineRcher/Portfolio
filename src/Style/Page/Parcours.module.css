@@ -1,54 +1,179 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Karla&display=swap');
 
-.container{
+.h1parcours{
+    color: #FE5D2C;
+    font-size: 3rem;
+    margin-left: 6vh;
+}
+
+.homePage{
+    width: 30%;
+    margin: 3vh;
+    display: flex;
+    justify-content: flex-end;
 
 }
 
-.title_cv{
-
+.between{
+    width: 230%;
 }
 
-.title{
-
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
-.cv{
-
+.containerFormationExperience{
+    display: flex;
+    flex-direction: row;
+    margin: 3vh;
 }
 
-.content{
-
+.Formations{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10vh;
+    margin-left: 3vh;
 }
 
 .formation{
+    font-family: 'Karla', sans-serif;
+}
+
+.h1formation{
+    color: #FE5D2C;
+}
+
+.h2formation{
 
 }
 
-.line {
-    position: relative;
-    width: 2px;
-    height: 100px;
-    background: black;
-}
-
-
-.containerAlternance{
-
+.Experiences{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5vh;
+    margin-left: 10vh;
 }
 
 .experience{
+    font-family: 'Karla', sans-serif;
+}
+
+.h1experience{
+    color: #FE5D2C;
+}
+
+.h2experience{
 
 }
 
-.titleHobbies{
+.h1Competence{
+    color: #FE5D2C;
+}
+.icon{
+    width: 190%;
+}
+.containerCompetences{
+    display: flex;
+    flex-direction: column;
+    margin: 5vh;
+}
 
+.competences{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.competence {
+    border-radius: 4px;
+    padding: 1vh;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0.6, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3vh;
+    font-size: 0.8rem;
+    position: relative;
+    font-family: 'Karla', sans-serif;
+    --progress-width: 0%;
+}
+
+    .competence::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-bottom: blue solid 3px;
+        width: var(--progress-width);
+        border-radius: 16px;
+    }
+
+
+.competenceIcon {
+}
+
+.competenceTitle {
+
+    margin-left: 1rem;
+}
+
+.competenceBarContainer {
+    width: 100%;
+
+    border-radius: 10px;
+    margin: 0 1rem;
+}
+
+.competenceBar {
+    height: 10px;
+    width: 100%;
+
+    border-radius: 10px;
+}
+
+.competencePercentage {
+
+    margin-right: 1rem;
+}
+
+
+.titleHobbies{
+    color: #FE5D2C;
+    margin-left: 6vh
 }
 
 .hobbies{
+display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 6vh;
 
+    padding: 5vh;
 }
 
 .hobbie{
+    font-family: 'Karla', sans-serif;
+margin: 5vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0.6, 0.6);
+    border-radius: 6px;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3vh;
+    width: 20vh;
+}
+.hobbieName{
 
 }
 
+.hobbieIcon{
+
+}
+.hobbieIconImg{
+    width: 100%;
+}

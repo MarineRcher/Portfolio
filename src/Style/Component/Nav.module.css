@@ -3,16 +3,29 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    width: 97%;
+    justify-content: center;
+    width: 100%;
 }
 
+.links{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.h1Name{
+    color: #FE5D2C;
+    margin-right: 12vh;
+    margin-left: 12vh;
+    font-size: 1.2rem;
+}
 .link {
     display: flex;
-    justify-content: flex-end;
-    margin: 8vh;
+    justify-content: center;
+    margin-right: 12vh;
+    margin-left: 12vh;
     text-decoration: none;
-    color: black;
+    color: #FE5D2C;
     font-weight: bolder;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
