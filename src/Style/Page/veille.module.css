@@ -1,21 +1,32 @@
 .containerTitleVT{
     display: flex;
-    font-size: x-large;
     flex-direction: row;
-    margin-left: 5vh;
-    width: 95%;
-    justify-content: flex-end;
+    width: 100%;
 }
 
 .h1TitleVT{
-    width: 35%;
-    padding-bottom: 0;
-    margin-bottom: 0;
+    color: #FE5D2C;
+    font-size: 3rem;
+    margin-left: 6vh;
+    width: 170%;
 }
 
-.trait{
-    border-bottom: 3px solid black;
+.homePage{
+    width: 20%;
+    margin: 6vh;
     display: flex;
     justify-content: flex-end;
-    width: 80%;
+
+}
+
+.between{
+    width: 50%;
+}
+.button{
+    display: flex;
+justify-content: center;
+    align-items: center;
+    margin: 6vh;
+    width: 70%;
+    background-color: gray;
 }

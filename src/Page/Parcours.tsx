@@ -1,6 +1,11 @@
 import styles from "../Style/Page/Parcours.module.css";
 import {Link} from "react-router-dom";
 import home from './../assets/home.png';
+
+import cv from "../Documents/cv.pdf";
+import syntese from "../Documents/TableauDeSynthese.pdf";
+
+
 //icons competences
 import htmlIcon from './../assets/iconsCompetences/html.png';
 import cssIcon from './../assets/iconsCompetences/css.png';
@@ -71,6 +76,18 @@ function Parcours() {
                 </div>
             </div>
         </div>
+            <div className={styles.cvAndSynthese}>
+                <div className={styles.cv}>
+                <a href={cv} download>
+                <button>CV en PDF</button>
+                </a>
+                </div>
+                <div className={styles.synthese}>
+                <a href={syntese} download>
+                <button>Tableau de Synthese</button>
+                </a>
+                </div>
+            </div>
 
             <div className={styles.containerCompetences}>
                 <h1 className={styles.h1Competence}>Competences</h1>

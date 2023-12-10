@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Karla&display=swap');
 
+.containerPage{
+    margin-bottom: 10vh;
+}
+.homePage{
+    width: 30%;
+    margin: 6vh;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.between{
+    width: 230%;
+}
+
+
 .containerTitleAP{
     display: flex;
     flex-direction: row;
@@ -15,11 +30,24 @@
 
 }
 
-.containeTitle{
-
+.containerTitle{
+    display: flex;
+    font-size: x-large;
+    flex-direction: row;
+    margin-left: 5vh;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    color: #FE5D2C;
 }
 
 .trait{
+    border-bottom: 1.5px solid #FE5D2C;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    margin-left: 2vh;
 
 }
 
@@ -39,7 +67,14 @@
 
 
 }
-
+.images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagesProject{
+    width: 80%;
+}
 .content{
     padding-bottom: 1vh;
     margin-top: 0;
@@ -48,8 +83,31 @@
 
 }
 
+.buttonAndGit{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+
+.icon{
+    width: 7%;
+    display: flex;
+    justify-content: center ;
+
+}
+
+.containerIcon{
+    display: flex;
+    justify-content: center ;
+}
+
 button{
-    border-radius: 2px;
+    border-radius: 8px;
+    background-color: #FE5D2C;
+    border: black;
+    padding: 1.4vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0.6, 0.6);
 }
 .containerContent{
 
