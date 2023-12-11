@@ -15,7 +15,9 @@ import vbaIcon from './../assets/iconsCompetences/vba.png';
 import bashIcon from './../assets/iconsCompetences/bash.png';
 import cSharpIcon from './../assets/iconsCompetences/CSharp.png';
 import sqlIcon from './../assets/iconsCompetences/sql.png';
-
+interface CustomCSSProperties extends React.CSSProperties {
+    '--progress-width'?: string;
+}
 //icon hobbies
 import bookIcon from './../assets/iconHobbies/book.png';
 import cookIcon from './../assets/iconHobbies/cook.png';
@@ -96,7 +98,7 @@ function Parcours() {
                         <div
                             key={index}
                             className={styles.competence}
-                            style={{ '--progress-width': competence.pourcentage as React.CSSProperties}}
+                            style={{ '--progress-width': competence.pourcentage } as CustomCSSProperties}
                         >
                             <div className={styles.competenceIcon}>
                                 <img src={competence.icon} alt={competence.nom} className={styles.icon} />
