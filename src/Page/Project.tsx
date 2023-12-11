@@ -12,8 +12,8 @@ import {Link} from "react-router-dom";
 
 function Project() {
     const projects = [
-        {number: "01.   ", nom: "   Plenty", type: "Application mobile",langage: "React Native, NodeJS, PostgreSQL", content: "Application qui repertorie les aliments les moins cher.", photo: plenty, pdf: Plenty},
-        {number: "02.   ", nom: "   MedGenix", type: "Interface web",langage: "Reacts tsx, NodeJS, SQL", content: "Interface web pour gerer les projets avec des taches attribuees.", photo: medgenix, pdf: Medgenix}
+        {number: "01.   ", nom: "   Plenty", type: "Application mobile",langage: "React Native, NodeJS, PostgreSQL", content: "Application qui répertorie les aliments les moins cher.", photo: plenty, pdf: Plenty},
+        {number: "02.   ", nom: "   MedGenix", type: "Interface web",langage: "Reacts tsx, NodeJS, SQL", content: "Interface web pour gerer les projets avec des taches attribuées.", photo: medgenix, pdf: Medgenix}
     ]
     return (
         <>

@@ -54,13 +54,13 @@ function Parcours() {
                 <h1 className={styles.h1formation}>Formation</h1>
                 <div className={styles.formation}>
                     <h3 className={styles.h3formation}>Bac Scientifique</h3>
-                    <p>Lycee Ronsard</p>
+                    <p>Lycée Ronsard</p>
                     <p>2017 - 2020</p>
                 </div>
                 <div className={styles.formation}>
-                    <h3 className={styles.h3formation}>1ere et 2eme annee de licence</h3>
-                    <h3 className={styles.h3formation}>histoire de l'art et d'archeologie</h3>
-                    <p>Universite Lyon II</p>
+                    <h3 className={styles.h3formation}>1ère et 2ème année de licence</h3>
+                    <h3 className={styles.h3formation}>Histoire de l'art et d'archeologie</h3>
+                    <p>Université Lyon II</p>
                     <p>2020 - 2022</p>
                 </div>
                 <div className={styles.formation}>
@@ -70,9 +70,9 @@ function Parcours() {
                 </div>
             </div>
             <div className={styles.Experiences}>
-                <h1 className={styles.h1experience}>Experience</h1>
+                <h1 className={styles.h1experience}>Expérience</h1>
                 <div className={styles.experience}>
-                    <h3 className={styles.h2experience}>Concepteur developer</h3>
+                    <h3 className={styles.h2experience}>Concepteur developpeur</h3>
                     <p>CNAM</p>
                     <p>2022 - 2024</p>
                 </div>
@@ -92,7 +92,7 @@ function Parcours() {
             </div>
 
             <div className={styles.containerCompetences}>
-                <h1 className={styles.h1Competence}>Competences</h1>
+                <h1 className={styles.h1Competence}>Compétences</h1>
                 <div className={styles.competences}  >
                     {competences.map((competence, index) => (
                         <div
@@ -118,7 +118,7 @@ function Parcours() {
 
 
             <div className={styles.titleHobbies}>
-                <h1>Centre d'interets</h1>
+                <h1>Centre d'intérets</h1>
             </div>
             <div className={styles.hobbies}>
                 {hobbies.map((hobbies, index) => (
