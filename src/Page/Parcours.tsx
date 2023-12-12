@@ -25,14 +25,14 @@ import gamesIcon from './../assets/iconHobbies/games.png';
 import photoIcon from './../assets/iconHobbies/photo.png';
 function Parcours() {
     const competences = [
-        { nom: "HTML", pourcentage: "80%", icon: htmlIcon },
-        {nom: "CSS", pourcentage: "70%", icon: cssIcon},
-        {nom: "REACT", pourcentage: "75%", icon: reactIcon},
-        {nom: "NodeJS", pourcentage: "70%", icon: nodeIcon},
-        {nom: "VBA", pourcentage: "70%", icon: vbaIcon},
-        {nom: "Bash", pourcentage: "70%", icon: bashIcon},
-        {nom: "C#", pourcentage: "40%", icon: cSharpIcon},
-        {nom: "SQL", pourcentage: "90%", icon: sqlIcon},
+        { nom: "HTML", pourcentage: "60%", icon: htmlIcon },
+        {nom: "CSS", pourcentage: "50%", icon: cssIcon},
+        {nom: "REACT", pourcentage: "50%", icon: reactIcon},
+        {nom: "NodeJS", pourcentage: "50%", icon: nodeIcon},
+        {nom: "VBA", pourcentage: "50%", icon: vbaIcon},
+        {nom: "Bash", pourcentage: "50%", icon: bashIcon},
+        {nom: "C#", pourcentage: "10%", icon: cSharpIcon},
+        {nom: "SQL", pourcentage: "60%", icon: sqlIcon},
     ];
     const hobbies = [
         {nom: "Lecture", icon: bookIcon},

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Karla&display=swap');
+
+.h1alternance{
+    color: #FE5D2C;
+    font-size: 3rem;
+    margin-left: 6vh;
+}
+
+.homePage{
+    width: 30%;
+    margin: 6vh;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.between{
+    width: 230%;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.entrepriseMissions{
+    display: flex;
+    flex-direction: column;
+    margin-left: 6vh;
+}
+
+.imgCnam{
+    width: 20%;
+
+}
+
+p{
+    font-family: 'Karla', sans-serif;
+}
+
+ul{
+    font-family: 'Karla', sans-serif;
+}

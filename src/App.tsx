@@ -7,6 +7,7 @@ import HomePage from "./Page/HomePage.tsx";
 import Project from "./Page/Project.tsx";
 import Veille from "./Page/Veille.tsx";
 import Parcours from "./Page/Parcours.tsx";
+import Alternance from "./Page/Alternance.tsx";
 function App() {
   return (
     <>
@@ -16,6 +17,7 @@ function App() {
             <Route path="/projets" element={<Project />} />
             <Route path="/veille" element={<Veille />} />
             <Route path="/parcours" element={<Parcours />} />
+            <Route path="/alternance" element={<Alternance />} />
         </Routes>
     </>
   )

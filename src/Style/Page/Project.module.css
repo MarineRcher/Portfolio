@@ -85,13 +85,13 @@
 
 .buttonAndGit{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
-    align-items: center;
+
 }
 
 .icon{
-    width: 7%;
+    width: 9%;
     display: flex;
     justify-content: center ;
 
@@ -100,8 +100,18 @@
 .containerIcon{
     display: flex;
     justify-content: center ;
+    width: 50%;
 }
 
+.containerLien{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.buttonRapport{
+    display: flex;
+    justify-content: flex-start;
+}
 button{
     border-radius: 8px;
     background-color: #FE5D2C;
@@ -110,6 +120,7 @@ button{
     box-shadow: 0 0 10px rgba(0, 0, 0.6, 0.6);
 }
 .containerContent{
+
 
 }
 

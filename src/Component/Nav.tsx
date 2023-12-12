@@ -18,6 +18,10 @@ function Nav(){
                     <h1 className={styles.h1Name}>03</h1>
                 <Link to="/veille" className={styles.link}>Veille technologique</Link>
                 </div>
+                <div className={styles.links}>
+                    <h1 className={styles.h1Name}>04</h1>
+                    <Link to="/alternance" className={styles.link}>Alternance</Link>
+                </div>
             </div>
         </>
     )
