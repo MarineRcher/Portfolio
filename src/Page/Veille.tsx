@@ -17,11 +17,13 @@ function Veille() {
                         <img src={home} alt={home} className={styles.homePage}/>
                     </Link>
             </div>
-                <div className={styles.containerContent}>
-                <a href={veille} download>
+            <div className={styles.containerContent}>
+                <a href={veille} target="_blank" rel="noopener noreferrer">
                     <button className={styles.button}>Veille Technologique en PDF</button>
                 </a>
-                </div>
+            </div>
+
+
 
         </>
     )

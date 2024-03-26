@@ -15,6 +15,7 @@ import vbaIcon from './../assets/iconsCompetences/vba.png';
 import bashIcon from './../assets/iconsCompetences/bash.png';
 import cSharpIcon from './../assets/iconsCompetences/CSharp.png';
 import sqlIcon from './../assets/iconsCompetences/sql.png';
+import PHP from './../assets/iconsCompetences/php.png';
 interface CustomCSSProperties extends React.CSSProperties {
     '--progress-width'?: string;
 }
@@ -33,6 +34,8 @@ function Parcours() {
         {nom: "Bash", pourcentage: "50%", icon: bashIcon},
         {nom: "C#", pourcentage: "10%", icon: cSharpIcon},
         {nom: "SQL", pourcentage: "60%", icon: sqlIcon},
+        {nom: "PHP", pourcentage: "40%", icon: PHP},
+        
     ];
     const hobbies = [
         {nom: "Lecture", icon: bookIcon},
@@ -80,12 +83,12 @@ function Parcours() {
         </div>
             <div className={styles.cvAndSynthese}>
                 <div className={styles.cv}>
-                <a href={cv} download>
+                <a href={cv} target="_blank" >
                 <button>CV en PDF</button>
                 </a>
                 </div>
                 <div className={styles.synthese}>
-                <a href={syntese} download>
+                <a href={syntese} target="_blank" >
                 <button>Tableau de Synthese</button>
                 </a>
                 </div>
@@ -103,7 +106,7 @@ function Parcours() {
                             <div className={styles.competenceIcon}>
                                 <img src={competence.icon} alt={competence.nom} className={styles.icon} />
                             </div>
-                            <div className={styles.competenceTitle}>{competence.nom}</div>
+                            <div className={styles.competenceTitle}><strong>{competence.nom}</strong></div>
                             <div className={styles.competenceBarContainer}>
                                 <div
                                     className={styles.competenceBar}

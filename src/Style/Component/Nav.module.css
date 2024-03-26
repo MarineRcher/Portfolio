@@ -3,8 +3,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
-    width: 120%;
+    width: 100%;
 }
 
 .links{
@@ -15,15 +14,15 @@
 
 .h1Name{
     color: #FE5D2C;
-    margin-right: 12vh;
-    margin-left: 12vh;
+    margin-right: 7vh;
+    margin-left: 7vh;
     font-size: 1rem;
 }
 .link {
     display: flex;
     justify-content: center;
-    margin-right: 12vh;
-    margin-left: 12vh;
+    margin-right: 7vh;
+    margin-left: 7vh;
     text-decoration: none;
     color: #FE5D2C;
     font-weight: bolder;
