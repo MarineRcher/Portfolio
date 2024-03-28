@@ -19,6 +19,7 @@
 
 }
 
+
 .between{
     width: 50%;
 }
@@ -29,4 +30,13 @@ justify-content: center;
     margin: 6vh;
     width: 70%;
     background-color: gray;
+}
+
+.containerVeille{
+    
+    justify-content: center;
+}
+
+img{
+    width: 9%;
 }
