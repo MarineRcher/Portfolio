@@ -33,7 +33,6 @@ import solutionXss8 from '../assets/veille/solutionXss8.png';
 import solutionXss9 from '../assets/veille/solutionXss9.png';
 
 import solutionDefaillant1 from '../assets/veille/solutionDefaillant1.png';
-import solutionDefaillant2 from '../assets/veille/solutionDefaillant2.png'
 import solutionDefaillant3 from '../assets/veille/solutionDefaillant3.png';
 import solutionDefaillant4 from '../assets/veille/solutionDefaillant4.png'
 
@@ -55,20 +54,19 @@ function Veille() {
                 </a>
             </div>
             <div className={styles.containerVeille}>
-                <h2>La sécurité des applications web1La sécurité des applications web</h2>
-                <p>La sécurité des applications web: cette question est d'autant plus cruciale que les attaques
-                    informatiques deviennent de plus en plus sophistiquées et peuvent avoir des conséquences<br/>
+                <h2>La sécurité des applications web</h2>
+                <p>La sécurité des applications web: cette question est d'autant plus cruciale que les attaques informatiques deviennent de plus en plus sophistiquées et peuvent avoir des conséquences
                     désastreuses pour les entreprises et les utilisateurs finaux. Nous examinerons les failles
-                    fréquentes telles que l'injection SQL, le Cross-Site Scripting (XSS) et les défauts de contrôle<br/>
+                    fréquentes telles que l'injection SQL, le Cross-Site Scripting (XSS) et les défauts de contrôle
                     d'accès, qui représentent des vecteurs d'attaques courants exploités par les cybercriminels
                     pour compromettre la sécurité des applications web.
                 </p>
                 <h3>Failles fréquentes</h3>
                 <h4>Injection SQL</h4>
                 <p>Les attaques par injection SQL se produisent lorsque des données malveillantes sont
-                    injectées dans une base de données via une application web. Cela peut conduire à des<br/>
+                    injectées dans une base de données via une application web. Cela peut conduire à des
                     fuites de données, à la modification ou à la suppression de données.
-                    On peut prendre lʼexemple dʼune page dʼauthentification, lʼauthentification marche avec cette<br/>
+                    On peut prendre lʼexemple dʼune page dʼauthentification, lʼauthentification marche avec cette
                     requête SQL.</p>
                 <img src={injection1}/>
                 <p><strong>1=1</strong> renvoie toujours True.
@@ -180,11 +178,8 @@ function Veille() {
             </p>
             <img src={solutionDefaillant1} />
             <p>
-            qui empêche le code JS d’accéder au cookie, de plus, avec 
-            </p>
-            <img src={solutionDefaillant2} />
-
-            <p>
+            qui empêche le code JS d’accéder au cookie, de plus, avec secure,
+            
             les données sont envoyées seulement dans le cas où il s’agit de requêtes HTTPS.
             </p>
             <img src={solutionDefaillant3} />
@@ -203,17 +198,17 @@ function Veille() {
             <h3>Bibliographie</h3>
             <p>
           
-            https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-005/ <br/>
+           <a href="https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-005/"> https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-005/</a> <br/>
 
-            https://blog.qualys.com/qualys-insights/2023/09/26/qualys-survey-of-top-10-exploited-vulnerabilities-in-2023<br/>
+            <a href="https://blog.qualys.com/qualys-insights/2023/09/26/qualys-survey-of-top-10-exploited-vulnerabilities-in-2023">https://blog.qualys.com/qualys-insights/2023/09/26/qualys-survey-of-top-10-exploited-vulnerabilities-in-2023</a><br/>
 
-            https://www.vaadata.com/<br/>
+            <a href="https://www.vaadata.com/">https://www.vaadata.com/</a><br/>
 
-            https://www.cert.ssi.gouv.fr/<br/>
+            <a href="https://www.cert.ssi.gouv.fr/">https://www.cert.ssi.gouv.fr/</a><br/>
 
-            https://owasp.org/Top10/A00_2021_Introduction/<br/>
+            <a href="https://owasp.org/Top10/A00_2021_Introduction/">https://owasp.org/Top10/A00_2021_Introduction/</a><br/>
 
-            https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html<br/>
+            <a href="https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html</a>
             </p>
             </div>
 
