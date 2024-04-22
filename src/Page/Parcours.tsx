@@ -1,6 +1,5 @@
 import styles from "../Style/Page/Parcours.module.css";
-import {Link} from "react-router-dom";
-import home from './../assets/home.png';
+
 
 import cv from "../Documents/cv.pdf";
 import syntese from "../Documents/TableauDeSynthese.pdf";
@@ -45,12 +44,9 @@ function Parcours() {
     ]
     return(
         <>
+<div className={styles.container}>
             <div className={styles.header}>
             <h1 className={styles.h1parcours}>Parcours</h1>
-                <div className={styles.between}></div>
-                <Link to="/" className={styles.link}>
-            <img src={home} alt={home} className={styles.homePage}/>
-                </Link>
             </div>
         <div className={styles.containerFormationExperience}>
             <div className={styles.Formations}>
@@ -133,7 +129,7 @@ function Parcours() {
                 </div>
                 ))}
             </div>
-
+</div>
         </>
     )
 }

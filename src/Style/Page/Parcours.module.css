@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Karla&display=swap');
+.container {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #f6eee9;
+
+}
 
 .h1parcours{
-    color: #FE5D2C;
-    font-size: 3rem;
+    color: black;
+    font-size: 2rem;
     margin-left: 6vh;
 }
 
@@ -11,7 +20,6 @@
     margin: 6vh;
     display: flex;
     justify-content: flex-end;
-
 }
 
 .between{

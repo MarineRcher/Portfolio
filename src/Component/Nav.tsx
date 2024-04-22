@@ -1,30 +1,33 @@
+import { Link, useLocation } from "react-router-dom";
 import styles from "../Style/Component/Nav.module.css";
-import {Link} from "react-router-dom";
 
+function Nav() {
+    const location = useLocation();
 
-function Nav(){
-    return(
-        <>
-            <div className={styles.nav}>
-                <div className={styles.links}>
-                <h1 className={styles.h1Name}>01</h1>
-                <Link to="/parcours" className={styles.link}>Parcours</Link>
-                </div>
-                <div className={styles.links}>
-                    <h1 className={styles.h1Name}>02</h1>
-                <Link to="/projets" className={styles.link}>Projets</Link>
-                </div>
-                <div className={styles.links}>
-                    <h1 className={styles.h1Name}>03</h1>
-                <Link to="/veille" className={styles.link}>Veille technologique</Link>
-                </div>
-                <div className={styles.links}>
-                    <h1 className={styles.h1Name}>04</h1>
-                    <Link to="/alternance" className={styles.link}>Alternance</Link>
-                </div>
-            </div>
-        </>
-    )
+    // Function to determine if the link is active
+    const isActive = (path: string) => location.pathname === path;
+
+    // Define your menu items
+    const menuItems = [
+        { path: "/", label: "Accueil" },
+        { path: "/parcours", label: "Parcours" },
+        { path: "/projets", label: "Projets" },
+        { path: "/veille", label: "Veille technologique" },
+        { path: "/alternance", label: "Alternance" }
+    ];
+
+    return (
+        <div className={styles.nav}>
+            {menuItems.map((menuItem, index) => (
+                // Render menu item only if it's not active
+                !isActive(menuItem.path) && (
+                    <div key={index} className={styles.links}>
+                        <Link to={menuItem.path} className={styles.link}>{menuItem.label}</Link>
+                    </div>
+                )
+            ))}
+        </div>
+    );
 }
 
 export default Nav;

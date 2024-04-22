@@ -8,10 +8,11 @@ import Project from "./Page/Project.tsx";
 import Veille from "./Page/Veille.tsx";
 import Parcours from "./Page/Parcours.tsx";
 import Alternance from "./Page/Alternance.tsx";
+import Nav from "./Component/Nav.tsx";
 function App() {
   return (
     <>
-
+        <Nav />
         <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/projets" element={<Project />} />

@@ -6,25 +6,25 @@
     width: 100%;
 }
 
-.links{
-    display: flex;
-    flex-direction: column;
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #f6eee9;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
-.h1Name{
-    color: #FE5D2C;
-    margin-right: 7vh;
-    margin-left: 7vh;
-    font-size: 1rem;
-}
 .link {
     display: flex;
     justify-content: center;
-    margin-right: 7vh;
-    margin-left: 7vh;
     text-decoration: none;
     color: #FE5D2C;
     font-weight: bolder;
-    font-size: 1.3rem;
+    font-size: 3vh;
+    margin: 4vh;
 }

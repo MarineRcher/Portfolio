@@ -1,16 +1,12 @@
 import styles from "../Style/Page/alternance.module.css";
-import {Link} from "react-router-dom";
-import home from "../assets/home.png";
+
 import cnam from "../assets/cnam.jpeg";
 function Alternance() {
     return(
         <>
             <div className={styles.header}>
                 <h1 className={styles.h1alternance}>Alternance</h1>
-                <div className={styles.between}></div>
-                <Link to="/" className={styles.link}>
-                    <img src={home} alt={home} className={styles.homePage}/>
-                </Link>
+
             </div>
             <div className={styles.entrepriseMissions}>
                 <div className={styles.entreprise}>

@@ -1,5 +1,4 @@
 import styles from "../Style/Page/Project.module.css";
-import home from './../assets/home.png';
 import plenty from "../assets/projects/plenty.png";
 import medgenix from "../assets/projects/medgenix.png";
 import inventLab from "../assets/projects/inventLab.png";
@@ -11,7 +10,6 @@ import Invent from "../Documents/rapports/AP3.pdf";
 import gsb from "../Documents/rapports/AP4.pdf";
 
 import git from "./../assets/icons/github.png";
-import {Link} from "react-router-dom";
 
 
 function Project() {
@@ -26,10 +24,7 @@ function Project() {
             <div className={styles.containerPage}>
                     <div className={styles.containerTitleAP}>
                         <h1 className={styles.h1TitleAp}>Projets</h1>
-                        <div className={styles.between}></div>
-                        <Link to="/" className={styles.link}>
-                            <img src={home} alt={home} className={styles.homePage}/>
-                        </Link>
+
                     </div>
 
                 {projects.map((projects, index) => (
