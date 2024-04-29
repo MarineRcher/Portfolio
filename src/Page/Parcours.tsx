@@ -1,6 +1,6 @@
 import styles from "../Style/Page/Parcours.module.css";
-
-
+import { useLocation } from "react-router-dom";
+import { useEffect } from 'react';
 import cv from "../Documents/cv.pdf";
 import syntese from "../Documents/TableauDeSynthese.pdf";
 
@@ -24,6 +24,37 @@ import cookIcon from './../assets/iconHobbies/cook.png';
 import gamesIcon from './../assets/iconHobbies/games.png';
 import photoIcon from './../assets/iconHobbies/photo.png';
 function Parcours() {
+    const location = useLocation();
+    const isActive = (path: string) => location.pathname === path;
+    useEffect(() => {
+        if (isActive("/parcours")) {
+            document.body.style.backgroundColor = '#f6eee9';
+            document.body.style.padding = '0';
+            document.body.style.margin = '0';
+            document.body.style.height = '100%';
+            document.body.style.width = '100%';
+            document.body.style.overflowX = 'hidden';
+        } else {
+            // Reset to default styles or other page-specific styles
+            document.body.style.backgroundColor = '';
+            document.body.style.padding = '';
+            document.body.style.margin = '';
+            document.body.style.height = '';
+            document.body.style.width = '';
+            document.body.style.overflowX = '';
+        }
+
+        // Cleanup function to reset body style when component unmounts or route changes
+        return () => {
+            document.body.style.backgroundColor = '';
+            document.body.style.padding = '';
+            document.body.style.margin = '';
+            document.body.style.height = '';
+            document.body.style.width = '';
+            document.body.style.overflowX = '';
+        };
+    }, [location.pathname]);
+
     const competences = [
         { nom: "HTML", pourcentage: "60%", icon: htmlIcon },
         {nom: "CSS", pourcentage: "50%", icon: cssIcon},
@@ -48,40 +79,63 @@ function Parcours() {
             <div className={styles.header}>
             <h1 className={styles.h1parcours}>Parcours</h1>
             </div>
-        <div className={styles.containerFormationExperience}>
+
             <div className={styles.Formations}>
                 <h1 className={styles.h1formation}>Formation</h1>
                 <div className={styles.formation}>
+                <div className={styles.date}>
+                <p>2017 - 2020</p>
+                </div>
+                <div className={styles.diplome}>
                     <h3 className={styles.h3formation}>Bac Scientifique</h3>
                     <p>Lycée Ronsard</p>
-                    <p>2017 - 2020</p>
                 </div>
+                </div>
+
+
                 <div className={styles.formation}>
+                    <div className={styles.date}>
+                    <p>2020 - 2022</p>
+                    </div>
+                    <div className={styles.diplome}>
                     <h3 className={styles.h3formation}>1ère et 2ème année de licence</h3>
                     <h3 className={styles.h3formation}>Histoire de l'art et d'archeologie</h3>
                     <p>Université Lyon II</p>
-                    <p>2020 - 2022</p>
+                    </div>
                 </div>
+
                 <div className={styles.formation}>
+                    <div className={styles.date}>
+                        <p>2022 - 2024</p>
+                    </div>
+                    <div className={styles.diplome}>
                     <h3 className={styles.h3formation}>BTS SIO Option SLAM</h3>
                     <p>Isitech</p>
-                    <p>2022 - 2024</p>
+                    </div>
                 </div>
             </div>
             <div className={styles.Experiences}>
+
                 <h1 className={styles.h1experience}>Expérience</h1>
                 <div className={styles.experience}>
-                    <h3 className={styles.h2experience}>Concepteur developpeur</h3>
-                    <p>CNAM</p>
+                    <div className={styles.date}>
                     <p>2022 - 2024</p>
                 </div>
+                    <div className={styles.diplome}>
+                    <h3 className={styles.h2experience}>Concepteur developpeur</h3>
+                    <p>CNAM</p>
+                    </div>
+                </div>
             </div>
-        </div>
+
             <div className={styles.cvAndSynthese}>
                 <div className={styles.cv}>
-                <a href={cv} target="_blank" >
-                <button>CV en PDF</button>
-                </a>
+                    <div className={styles.btn}>
+                        <a href={cv} target="_blank" rel="noopener noreferrer">
+                            <span>CV en PDF</span>
+                        </a>
+                </div>
+
                 </div>
                 <div className={styles.synthese}>
                 <a href={syntese} target="_blank" >
