@@ -44,14 +44,17 @@ function Project() {
                         <p>{projects.langage}</p>
                             <div className={styles.buttonAndGit}>
                                 <div className={styles.buttonRapport}>
+
+                                    <span className={styles.btn}>
                                 <a href={projects.pdf} target="_blank" rel="noopener noreferrer">
-                                    <button>Rapport en PDF</button>
+                                    Rapport
                                 </a>
+                                    </span>
                                 </div>
                                 <div className={styles.containerIcon}>
-                                {projects.lienFront && (
-                                    <div className={styles.containerLien}>
-                                        <h3>Front-End</h3>
+                                    {projects.lienFront && (
+                                        <div className={styles.containerLien}>
+                                            <h3>Front-End</h3>
                                         <a href={projects.lienFront}>
                                             <img src={git} alt={git} className={styles.icon}/>
                                         </a>

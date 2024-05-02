@@ -87,7 +87,7 @@
 
 
 .h1Competence{
-    color: #FE5D2C;
+    color: black;
 }
 .icon{
     width: 190%;
@@ -100,70 +100,51 @@
 }
 
 .btn {
-    line-height: 50px;
-    height: 50px;
-    text-align: center;
-    width: 250px;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid black;
     cursor: pointer;
-    transition: all 0.3s;
     position: relative;
-    overflow: hidden;
-z-index: 0;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
 
-.btn span {
-    transition: all 0.3s;
-    position: relative;
-z-index: 2;
-font-size: 3vh;
-}
-
-.btn::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.btn:after {
+    content: "";
+    background-color: #ffe54c;
     width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0;
-    transition: all 0.3s;
-    border-bottom: 2px solid #3C3C3C;
-    border-top: 2px solid #3C3C3C;
-    transform: scale(0.1, 1);
-}
-
-
-.btn:hover::before {
-    opacity: 1;
-    transform: scale(1, 1);
-}
-
-.btn::after {
-    content: '';
+    z-index: -1;
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
     height: 100%;
-    z-index: 1;
-    transition: all 0.3s;
-    background-color: #3C3C3C;
-
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
 }
 
-.btn:hover::after {
-    opacity: 0;
-    transform: scale(0.1, 1);
+.btn:hover:after {
+    top: 0px;
+    left: 0px;
 }
 
+@media (min-width: 768px) {
+    .btn {
+        padding: 13px 50px 13px;
+    }
+}
 
 span{
     font-size: 3vh;
-    color: white;
     z-index: 3;
 }
-
+a{
+    text-decoration: none;
+    outline: none;
+}
 .cv{
     display: flex;
 margin: 6vh;
@@ -188,17 +169,17 @@ margin: 6vh;
 .competence {
     border-radius: 4px;
     padding: 1vh;
-    background-color: #ffffff;
+    background-color: #f3f3f3;
     box-shadow: 0 0 10px rgba(0, 0, 0.6, 0.6);
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 3vh;
-    font-size: 0.8rem;
+    font-size: 1rem;
     position: relative;
     font-family: 'Karla', sans-serif;
     --progress-width: 0%;
-    width: 30%;
+    width: 25%;
 }
 
     .competence::after {
@@ -241,7 +222,7 @@ margin: 6vh;
 
 
 .titleHobbies{
-    color: #FE5D2C;
+    color: black;
     margin-left: 6vh
 }
 
@@ -257,18 +238,21 @@ margin: 6vh;
 
 .hobbie{
     font-family: 'Karla', sans-serif;
-margin: 5vh;
+margin: 4vh;
     box-shadow: 0 0 10px rgba(0, 0, 0.6, 0.6);
     border-radius: 6px;
     background-color: #f3f3f3;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 3vh;
+    padding: 5vh;
     width: 20vh;
 }
 .hobbieName{
-
+    display: flex;
+justify-content: center;
+    padding-top: 2vh;
+    font-size: 1.2rem;
 }
 
 .hobbieIcon{

@@ -2,7 +2,7 @@ import styles from "../Style/Page/Parcours.module.css";
 import { useLocation } from "react-router-dom";
 import { useEffect } from 'react';
 import cv from "../Documents/cv.pdf";
-import syntese from "../Documents/TableauDeSynthese.pdf";
+import synthese from "../Documents/TableauDeSynthese.pdf";
 
 
 //icons competences
@@ -19,10 +19,10 @@ interface CustomCSSProperties extends React.CSSProperties {
     '--progress-width'?: string;
 }
 //icon hobbies
-import bookIcon from './../assets/iconHobbies/book.png';
-import cookIcon from './../assets/iconHobbies/cook.png';
-import gamesIcon from './../assets/iconHobbies/games.png';
-import photoIcon from './../assets/iconHobbies/photo.png';
+import bookIcon from './../assets/iconHobbies/livre.png';
+import cookIcon from './../assets/iconHobbies/cuisine.png';
+import gardenIcon from './../assets/iconHobbies/jardin.png';
+import cinemaIcon from './../assets/iconHobbies/cinema.png';
 function Parcours() {
     const location = useLocation();
     const isActive = (path: string) => location.pathname === path;
@@ -70,8 +70,8 @@ function Parcours() {
     const hobbies = [
         {nom: "Lecture", icon: bookIcon},
         {nom: "Cuisiner", icon: cookIcon},
-        {nom: "Jeux Videos", icon: gamesIcon},
-        {nom: "Photographie", icon: photoIcon},
+        {nom: "Jardiner", icon: gardenIcon},
+        {nom: "Cinéma", icon: cinemaIcon},
     ]
     return(
         <>
@@ -130,17 +130,21 @@ function Parcours() {
 
             <div className={styles.cvAndSynthese}>
                 <div className={styles.cv}>
-                    <div className={styles.btn}>
-                        <a href={cv} target="_blank" rel="noopener noreferrer">
-                            <span>CV en PDF</span>
-                        </a>
-                </div>
 
-                </div>
+                            <span className={styles.btn}>
+                                <a href={cv} target="_blank" rel="noopener noreferrer">
+                                    CV en PDF
+                                </a>
+                            </span>
+
+            </div>
+
                 <div className={styles.synthese}>
-                <a href={syntese} target="_blank" >
-                <button>Tableau de Synthese</button>
-                </a>
+                 <span className={styles.btn}>
+                                <a href={synthese} target="_blank" rel="noopener noreferrer">
+                                    Tableau de compétences
+                                </a>
+                            </span>
                 </div>
             </div>
 
@@ -179,7 +183,7 @@ function Parcours() {
                     <div className={styles.hobbieIcon}>
                         <img src={hobbies.icon} alt={hobbies.nom} className={styles.hobbieIconImg}/>
                     </div>
-                    <div className={styles.hobbieName}>{hobbies.nom}</div>
+                    <div className={styles.hobbieName}><strong>{hobbies.nom}</strong></div>
                 </div>
                 ))}
             </div>

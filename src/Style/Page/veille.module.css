@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+
+
 .containerTitleVT{
     display: flex;
     flex-direction: row;
@@ -5,49 +8,94 @@
 }
 
 .h1TitleVT{
-    color: #FE5D2C;
+    color: black;
     font-size: 3rem;
-    margin-left: 6vh;
+    margin-left: 5vh;
     width: 170%;
 }
 
-.homePage{
-    width: 20%;
-    margin: 6vh;
-    display: flex;
-    justify-content: flex-end;
-
+.imgVeille{
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
 }
 
+.containerContent{
+    margin: 2vh;
+}
 
+.containerVeille{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    flex-wrap: wrap;
+    background-color: #f3f3f3;
+    margin-top: -10%;
+    border-radius: 10px;
+    margin-bottom: 5vh;
+    padding: 4vh;
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.btn:after {
+    content: "";
+    background-color: #ffe54c;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+}
+
+.btn:hover:after {
+    top: 0px;
+    left: 0px;
+}
+
+@media (min-width: 768px) {
+    .btn {
+        padding: 13px 50px 13px;
+    }
+}
 .between{
     width: 50%;
 }
-.button{
-    display: flex;
-justify-content: center;
-    align-items: center;
-    margin: 6vh;
-    width: 20%;
-    background-color: black;
-    color: white;
-    box-shadow: 6px 3px 3px gray;
-}
+
 
 a{
     text-decoration: none;
     
 }
 
-.containerVeille{
-    background-color: #FE5D2C;
-    color:white;
-    justify-content: center;
-    margin: 3vh;
-    padding: 3vh;
-    opacity: 0.6;
-    border-radius:10px;
-}
 p{
     font-size: 20px;
 }
