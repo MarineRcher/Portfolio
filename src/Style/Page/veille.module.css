@@ -1,17 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Notable&display=swap');
 
 .containerTitleVT{
     display: flex;
     flex-direction: row;
     width: 100%;
+
+}
+.titleVeille{
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3{
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h4{
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .h1TitleVT{
     color: black;
-    font-size: 3rem;
+    font-size: 2.3rem;
     margin-left: 5vh;
     width: 170%;
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .imgVeille{
@@ -50,8 +70,10 @@
 }
 
 .btn {
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 16px;
-    font-weight: 200;
     letter-spacing: 1px;
     padding: 13px 20px 13px;
     outline: 0;
@@ -103,4 +125,14 @@ p{
 img{
     width: 35%;
     border-radius: 5px;
+}
+
+
+.iconVeille{
+    width: 10%;
+}
+.biblio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }

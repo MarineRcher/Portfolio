@@ -4,9 +4,7 @@ import styles from "../Style/Page/veille.module.css";
 import imgVeille from "../assets/veille.png";
 import veille from "../Documents/veille.pdf";
 
-import injection1 from '../assets/veille/injectionSQL.png';
-import injection2 from '../assets/veille/injectionArbre.png';
-import injection3 from '../assets/veille/injectionRequete.png';
+
 
 import xss1 from '../assets/veille/xssNom.png';
 import xss2 from '../assets/veille/xssConsole.png';
@@ -32,7 +30,13 @@ import solutionXss9 from '../assets/veille/solutionXss9.png';
 
 import solutionDefaillant1 from '../assets/veille/solutionDefaillant1.png';
 import solutionDefaillant3 from '../assets/veille/solutionDefaillant3.png';
-import solutionDefaillant4 from '../assets/veille/solutionDefaillant4.png'
+import solutionDefaillant4 from '../assets/veille/solutionDefaillant4.png';
+
+
+import qualys from '../assets/iconVeille/qualys.png';
+import owasp from '../assets/iconVeille/owasp.svg';
+import cert from '../assets/iconVeille/cert.jpeg';
+import vaadata from '../assets/iconVeille/vaadata.png';
 
 function Veille() {
     return(
@@ -43,12 +47,11 @@ function Veille() {
                 </div>
                 <img src={imgVeille} className={styles.imgVeille}/>
                 <div className={styles.containerVeille}>
-                <h2>La sécurité des applications web</h2>
+                <h2 className={styles.titleVeille}>La sécurité des applications web</h2>
                 <p>La sécurité des applications web: cette question est d'autant plus cruciale que les attaques
                     informatiques deviennent de plus en plus sophistiquées et peuvent avoir des conséquences
                     désastreuses pour les entreprises et les utilisateurs finaux. Nous examinerons les failles
-                    fréquentes telles que l'injection SQL, le Cross-Site Scripting (XSS) et les défauts de contrôle
-                    d'accès, qui représentent des vecteurs d'attaques courants exploités par les cybercriminels
+                    fréquentes, qui représentent des vecteurs d'attaques courants exploités par les cybercriminels
                     pour compromettre la sécurité des applications web.
                 </p>
                 <h3>Failles fréquentes</h3>
@@ -56,20 +59,8 @@ function Veille() {
                 <p>Les attaques par injection SQL se produisent lorsque des données malveillantes sont
                     injectées dans une base de données via une application web. Cela peut conduire à des
                     fuites de données, à la modification ou à la suppression de données.
-                    On peut prendre lʼexemple dʼune page dʼauthentification, lʼauthentification marche avec cette
-                    requête SQL.</p>
-                <img src={injection1}/>
-                <p><strong>1=1</strong> renvoie toujours True.
-                    Les <strong>--</strong> permet de mettre en commentaire du code SQL.
                 </p>
-                <img src={injection2}/>
-                <p>La sécurité des applications web2Dans ce cas, la requête SQL va être :</p>
-                <img src={injection3}/>
-                <p>Exemple :<br/>
-                    CVE-2023-34362 = <strong>exploitation dʼune vulnérabilité dans MOVEit Transfer</strong><br/>
-                    Il sʼagit dʼun logiciel de transfert de fichier or, on ne peut pas avoir plus dʼinformation
-                    concernant les détail techniques.
-                </p>
+
                 <h4>Cross-Site Scripting (XSS)</h4>
                 <p>Cette attaque est au même titre que lʼinjective SQL, mais ici
                     Les attaques XSS injectent des scripts malveillants dans les pages web vues par d'autres<br/>
@@ -197,21 +188,24 @@ function Veille() {
                 </p>
 
                 <h3>Bibliographie</h3>
+                    <div className={styles.biblio}>
                 <p>
 
-                    <a href="https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-005/"> https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-005/</a>
+                    <a href="https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-005/"><img className={styles.iconVeille} src={cert}/></a>
                     <br/>
 
-                    <a href="https://blog.qualys.com/qualys-insights/2023/09/26/qualys-survey-of-top-10-exploited-vulnerabilities-in-2023">https://blog.qualys.com/qualys-insights/2023/09/26/qualys-survey-of-top-10-exploited-vulnerabilities-in-2023</a><br/>
+                    <a href="https://blog.qualys.com/qualys-insights/2023/09/26/qualys-survey-of-top-10-exploited-vulnerabilities-in-2023"><img className={styles.iconVeille} src={qualys} /></a><br/>
 
-                    <a href="https://www.vaadata.com/">https://www.vaadata.com/</a><br/>
+                    <a href="https://www.vaadata.com/"><img className={styles.iconVeille} src={vaadata}/></a><br/>
 
-                    <a href="https://www.cert.ssi.gouv.fr/">https://www.cert.ssi.gouv.fr/</a><br/>
+                    <a href="https://www.cert.ssi.gouv.fr/"><img className={styles.iconVeille} src={cert}/></a><br/>
 
-                    <a href="https://owasp.org/Top10/A00_2021_Introduction/">https://owasp.org/Top10/A00_2021_Introduction/</a><br/>
+                    <a href="https://owasp.org/Top10/A00_2021_Introduction/"><img className={styles.iconVeille} src={owasp}/></a><br/>
 
-                    <a href="https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html</a>
+                    <a href="https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html"><img className={styles.iconVeille}
+                        src={owasp}/></a>
                 </p>
+                    </div>
 
 
             <div className={styles.containerContent}>

@@ -175,7 +175,7 @@ function Parcours() {
 
 
             <div className={styles.titleHobbies}>
-                <h1>Centre d'intérets</h1>
+                <h1 >Centre d'intérets</h1>
             </div>
             <div className={styles.hobbies}>
                 {hobbies.map((hobbies, index) => (
